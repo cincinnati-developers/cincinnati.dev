@@ -17,8 +17,10 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class='absolute top-1/2 left-1/2 -translate-x-1/2'>
-			<slot />
+		<div class='container px-2'>
+			<div class='h-screen w-screen flex items-center justify-center'>
+				<slot />
+			</div>
 		</div>
 	</body>
 </html>
